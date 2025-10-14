@@ -1,6 +1,6 @@
 # zpingScanner Bot
 
-Un bot de Discord completamente funcional que incluye un scanner de servidores Minecraft integrado en Python. **Requiere Node.js**.
+Un bot de Discord completamente funcional que incluye un scanner de servidores Minecraft integrado en Python. **No requiere Node.js; todo el escáner está implementado en Python**.
 
 ## ✨ Características
 
@@ -258,6 +258,7 @@ python unified_bot.py --cli --ip mc.hypixel.net --port 25565
 ## 📝 Notas Importantes
 
 - **No requiere Node.js** - Todo está en Python
+- **Componentes Node.js retirados** - El antiguo `scanner.js` y sus dependencias fueron eliminados; el escáner oficial es `zpingScanner-Bot.py`
 - **Webserver integrado** - Mantiene el bot activo automáticamente
 - **Compatibilidad** - Funciona en Windows, Linux, macOS
 
