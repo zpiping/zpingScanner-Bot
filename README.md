@@ -1,4 +1,4 @@
-# MCScanner Bot
+# zpingScanner Bot
 
 Un bot de Discord completamente funcional que incluye un scanner de servidores Minecraft integrado en Python. **Requiere Node.js**.
 
