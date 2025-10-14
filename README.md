@@ -1,6 +1,6 @@
-# MCSeeker Unified Bot
+# MCScanner Bot
 
-Un bot de Discord completamente funcional que incluye un scanner de servidores Minecraft integrado en Python. **No requiere Node.js** - todo está implementado en Python puro.
+Un bot de Discord completamente funcional que incluye un scanner de servidores Minecraft integrado en Python. **Requiere Node.js**.
 
 ## ✨ Características
 
@@ -29,7 +29,7 @@ Un bot de Discord completamente funcional que incluye un scanner de servidores M
 ### 1. Clonar/Descargar
 ```bash
 # Si tienes git
-git clone <repository>
+git clone https://github.com/zpiping/bot-host-test.git
 cd MCSeeker
 
 # O descargar y extraer los archivos
