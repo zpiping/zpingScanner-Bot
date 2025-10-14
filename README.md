@@ -31,8 +31,6 @@ Un bot de Discord completamente funcional que incluye un scanner de servidores M
 # Si tienes git
 git clone https://github.com/zpiping/bot-host-test.git
 cd MCSeeker
-
-# O descargar y extraer los archivos
 ```
 
 ### 2. Instalar Dependencias
@@ -58,7 +56,7 @@ GUILD_ID=tu_guild_id_opcional
 ### Modo Discord Bot (Recomendado)
 
 ```bash
-python unified_bot.py
+python zpingScanner-Bot.py
 ```
 
 **Comandos disponibles:**
@@ -199,7 +197,7 @@ python unified_bot.py --cli --ip 0.0.0.0/0 --min-players 10 --version "1.20.*" -
 /scan ip:192.168.1.0/24 port:25565-25566 show_desc:true geo_ip:true
 
 # CLI
-python unified_bot.py --cli --ip 192.168.1.0/24 --port 25565-25566 --show-desc --geo-ip
+python zpingScanner-Bot.py --cli --ip 192.168.1.0/24 --port 25565-25566 --show-desc --geo-ip
 ```
 
 ### Exportar Lista de Servidores
@@ -208,7 +206,7 @@ python unified_bot.py --cli --ip 192.168.1.0/24 --port 25565-25566 --show-desc -
 /scan ip:10.0.0.0/8 out:servers.csv format:csv quiet:true
 
 # CLI
-python unified_bot.py --cli --ip 10.0.0.0/8 --out servers.csv --format csv --quiet
+python zpingScanner-Bot.py --cli --ip 10.0.0.0/8 --out servers.csv --format csv --quiet
 ```
 
 ### Buscar Servidores Específicos
@@ -257,35 +255,15 @@ python unified_bot.py --cli --ip 127.0.0.1 --timeout 30
 python unified_bot.py --cli --ip mc.hypixel.net --port 25565
 ```
 
-## 🔄 Diferencias con el Sistema Original
-
-| Característica | Original (JS) | Unificado (Python) |
-|----------------|---------------|-------------------|
-| **Dependencias** | Node.js + npm | Solo Python + pip |
-| **Bot Discord** | Ejecuta scanner.js | Scanner integrado |
-| **Performance** | Buena | Similar/Mejor |
-| **Mantenimiento** | 2 archivos | 1 archivo |
-| **Instalación** | npm + pip | Solo pip |
-
 ## 📝 Notas Importantes
 
 - **No requiere Node.js** - Todo está en Python
 - **Webserver integrado** - Mantiene el bot activo automáticamente
-- **Manejo de errores** - Más robusto que el sistema original
-- **Formatos de salida** - Idénticos al sistema original
 - **Compatibilidad** - Funciona en Windows, Linux, macOS
 
-## 🤝 Contribuciones
 
-Este script unificado combina la funcionalidad de:
-- `scanner.js` (Scanner de Minecraft)
-- `main.py` (Bot de Discord)
-- `webserver.py` (Servidor web)
 
-Todo en un solo archivo `unified_bot.py` para máxima simplicidad.
 
-## 📄 Licencia
 
-Mantiene la misma funcionalidad que el sistema original JavaScript.
 
 
