@@ -1,6 +1,6 @@
 # zpingScanner Bot
 
-Un bot de Discord completamente funcional que incluye un scanner de servidores Minecraft integrado en Python. **Requiere Node.js**.
+Un bot de Discord completamente funcional que incluye un scanner de servidores Minecraft integrado en Python.
 
 ## ✨ Características
 
@@ -29,8 +29,8 @@ Un bot de Discord completamente funcional que incluye un scanner de servidores M
 ### 1. Clonar/Descargar
 ```bash
 # Si tienes git
-git clone https://github.com/zpiping/bot-host-test.git
-cd MCSeeker
+git clone https://github.com/zpiping/zpingScanner-Bot.git
+cd zpingScanner-Bot
 ```
 
 ### 2. Instalar Dependencias
@@ -82,13 +82,13 @@ python zpingScanner-Bot.py
 
 ```bash
 # Escaneo básico
-python unified_bot.py --cli --ip 192.168.1.1 --port 25565
+python zpingScanner-Bot.py --cli --ip 192.168.1.1 --port 25565
 
 # Escaneo completo con GeoIP
-python unified_bot.py --cli --ip 192.168.1.0/24 --geo-ip --maxmind-key TU_KEY --out results.csv
+python zpingScanner-Bot.py --cli --ip 192.168.1.0/24 --geo-ip --maxmind-key TU_KEY --out results.csv
 
 # Escaneo con filtros
-python unified_bot.py --cli --ip 0.0.0.0/0 --min-players 5 --version "1.20.*" --show-desc
+python zpingScanner-Bot.py --cli --ip 0.0.0.0/0 --min-players 5 --version "1.20.*" --show-desc
 ```
 
 ## 🔧 Opciones de Configuración
@@ -155,7 +155,7 @@ IP:PORT,VERSION,PLAYERS,DESCRIPTION,COUNTRY
 ### 2. Usar GeoIP
 ```bash
 # Modo CLI
-python unified_bot.py --cli --ip 192.168.1.0/24 --geo-ip --maxmind-key TU_CLAVE
+python zpingScanner-Bot.py --cli --ip 192.168.1.0/24 --geo-ip --maxmind-key TU_CLAVE
 
 # Modo Discord
 /fullscan ip:192.168.1.0/24 geo_ip:true maxmind_key:TU_CLAVE
@@ -188,7 +188,7 @@ https://discord.com/api/oauth2/authorize?client_id=TU_CLIENT_ID&permissions=2048
 /fullscan ip:0.0.0.0/0 min_players:10 version:"1.20.*" show_desc:true
 
 # CLI
-python unified_bot.py --cli --ip 0.0.0.0/0 --min-players 10 --version "1.20.*" --show-desc
+python zpingScanner-Bot.py --cli --ip 0.0.0.0/0 --min-players 10 --version "1.20.*" --show-desc
 ```
 
 ### Escaneo de Red Local
@@ -215,7 +215,7 @@ python zpingScanner-Bot.py --cli --ip 10.0.0.0/8 --out servers.csv --format csv 
 /scan ip:0.0.0.0/0 version:"1.20.*" max-players:50 min-players:1
 
 # CLI
-python unified_bot.py --cli --ip 0.0.0.0/0 --version "1.20.*" --max-players 50 --min-players 1
+python zpingScanner-Bot.py --cli --ip 0.0.0.0/0 --version "1.20.*" --max-players 50 --min-players 1
 ```
 
 ## 🚨 Solución de Problemas
@@ -249,10 +249,10 @@ python unified_bot.py --cli --ip 0.0.0.0/0 --version "1.20.*" --max-players 50 -
 ### Logs y Debugging
 ```bash
 # Ver logs detallados
-python unified_bot.py --cli --ip 127.0.0.1 --timeout 30
+python zpingScanner-Bot.py --cli --ip 127.0.0.1 --timeout 30
 
 # Verificar conectividad
-python unified_bot.py --cli --ip mc.hypixel.net --port 25565
+python zpingScanner-Bot.py --cli --ip mc.hypixel.net --port 25565
 ```
 
 ## 📝 Notas Importantes
